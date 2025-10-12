@@ -15,6 +15,6 @@ defined('ABSPATH') || exit;
 
 interface IPlugin extends Activatable, Deactivatable, MutableModules, MutablePackages, Bootable, HasDi
 {
-    public function setContainerBuilder(IContainerBuilder $builder): void;
+    public function setContainerBuilder(IContainerBuilder $builder): self;
     public function getPrefix(): string;
 }
