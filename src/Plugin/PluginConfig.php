@@ -4,9 +4,12 @@ declare(strict_types=1);
 
 namespace LunaPress\CoreContracts\Plugin;
 
-interface PluginConfig
+final readonly class PluginConfig
 {
-    public function getPluginVersion(): string;
-    public function getPluginPath(): string;
-    public function getPluginUrl(): string;
+    public function __construct(
+        public string $pluginVersion,
+        public string $pluginPath,
+        public string $pluginUrl,
+    ) {
+    }
 }
