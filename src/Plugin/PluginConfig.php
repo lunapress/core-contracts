@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace LunaPress\CoreContracts\Plugin;
 
-interface IConfig
+interface PluginConfig
 {
     public function getPluginVersion(): string;
     public function getPluginPath(): string;
